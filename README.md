@@ -1,3 +1,40 @@
+### Description
+We make EpiBooks better
+
+In this exercise you will work again on your EpiBooks project, implementing features like state and props
+to refactor the code and make it more reusable.
+
+1. Create a `SingleBook` component using a function.
+   This component must be set up to receive an object in the props
+   corresponding to a single book, and will display its cover and title.
+   Use react-bootstrap `Cards` (if you want to test it, the book object can be taken
+   from one of the ".json" files you received yesterday).
+
+2. Create a `BookList` component. This component will receive from the props an array of books,
+   and will display them through a `.map()` returning the `SingleBook component for each element.
+   Then mount `BookList` inside the `App` component, and provide it a list of books from one of the `.json` files as a prop.
+   You should get a result similar to the "AllTheBooks" component:
+   now, however, the structure is much more modular and reusable.
+
+3. Create a `filterBookList` function. By writing a search string into an input field,
+   the `BookList` component will have to render only the books containing the searched string as book title
+   (hint: save the search string inside the BookList component state and filter the books accordingly).
+   
+4. Convert your `SingleBook` component into a class, and creates its state containing a boolean property "selected".
+
+5. A click on the book cover will toggle the "selected" property.
+   If the "selected" property is "true", the "SingleBook" should be styled accordingly
+   the change of state, visually (you could for example use a red border).
+
+
+### Terminal commands: 
+- `npm i bootstrap@4.6.1`;
+- `npm i react-bootstrap@1.6.5`.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
